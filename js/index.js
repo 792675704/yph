@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-09-28 21:20:09
 * @Last Modified by:   792675704
-* @Last Modified time: 2016-09-29 21:20:07
+* @Last Modified time: 2016-09-30 11:41:01
 */
 
 
@@ -27,5 +27,14 @@ $(function(){
 		$('.fenlei #fenlei').css("display","block")
 	}, function() {
 		$('.fenlei #fenlei').css("display","none")
+	});
+})
+$(function(){
+	$('.ctr').hover(function() {
+		$('.arrowleft').css("display","block")
+		$('.arrowright').css("display","block")
+	}, function() {
+		$('.arrowleft').css("display","none")
+		$('.arrowright').css("display","none")
 	});
 })

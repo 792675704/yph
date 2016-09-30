@@ -93,7 +93,20 @@ body{font-family: "微软雅黑"; font-size: 12px;}
 .sao{
 	position: absolute;
 	z-index: 100;
+	background: #fff;
+	padding: 10px;
+	
+	border: 1px solid #ddd;
+	box-shadow: 0 0 3px #ccc;
 	display: none;
+}
+.sao1{
+	width: 90px;
+	margin: auto;
+	text-align: center;
+}
+.sao1 p{
+	color: #f70800;
 }
 /* logo */
 .logo{
@@ -102,14 +115,66 @@ body{font-family: "微软雅黑"; font-size: 12px;}
 }
 .logom{
 	float: left;
-	width: 210px;
+	width: 280px;
 }
-#search{
+.container {
+	position: relative;
 	width: 420px;
+	height: 35px;
 	float: left;
+	border: 3px solid #FF4200;
+}
+.container .search-box {
+	position: relative;
+	height: 100%;
+}
+.container .search-box input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 326px;
+	height: 100%;
+	border: 0;
+	outline: none;
+	padding-left: 10px;
+}
+.container .search-box .search-btn {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	width: 120px;
+	height: 100%;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	background-color: #FF4200;
+	cursor: pointer;
+}
+.container .search-box .search-btn:hover {
+	background-color: #F52B00;
+}
+.search-content {
+	position: absolute;
+	top: 38px;
+	left: 3px;
+	width: 418px;
+	border: 1px solid #999;
+}
+.search-content ul li {
+	list-style: none;
+	height: 25px;
+	line-height: 25px;
 }
 .mycart{
 	float: left;
+	position: relative;
+	height: 32px;
+}
+.cart{
+	display: block;
+	width: 138px;
+	height: 30px;
+	border: 1px solid #ddd;
 }
 /* nav */
 #nav{
@@ -172,6 +237,7 @@ body{font-family: "微软雅黑"; font-size: 12px;}
 	top: 41px;
 	left: -865px;
 	z-index: 200;
+	display: none;
 }
 .fen{
 	width: 135px;
@@ -288,4 +354,186 @@ margin-top: -15px;
 }
 .ciritem.active{
 	background: #c33;
+}
+.ctr{
+	height: 340px;
+	width: 1000px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.arrowleft{
+	background: url(../img/btn.png) no-repeat 0 0;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	top: 140px;
+	cursor: pointer;
+	left: 0;
+	display: none;
+}
+.arrowleft:hover{
+	background: url(../img/btn.png) no-repeat -92px -76px;
+}
+.arrowright:hover{
+	background: url(../img/btn.png) no-repeat -92px 0;
+}
+.arrowright{
+	background: url(../img/btn.png) no-repeat 0 -76px;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	top: 140px;
+	cursor: pointer;
+	right: 0;
+	display: none;
+}
+/* index-cont */
+#index-cont{
+	width: 100%;
+	background: #f2f2f2;
+}
+.index-box1{
+	height: 400px;
+}
+.index-box2{
+	height: 640px;
+}
+.index-box2 h3{
+	float: left;
+}
+.index-box2 a{
+	float: left;
+	display: block;
+	margin-top: 20px;
+}
+.index-box2 a img{
+	width: 490px;
+	height: 270px;
+}
+.index-box2 .boximg{
+	margin-right: 20px;
+}
+.index-box3{
+	height:auto !important;
+	height:200px; /*假定最低高度是200px*/
+	min-height:200px; 
+}
+.index-box3 h3{
+	float: left;
+}
+.index-box3 ul{
+	float: left;
+	width: 1020px;
+	height:auto !important;
+	height:200px; /*假定最低高度是200px*/
+	min-height:200px; 
+}
+.index-box3 ul li{
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	width: 318px;
+	height: 460px;
+}
+.index-box3 ul li:hover{
+	border: 1px solid #ff504a;
+}
+.index-box3 ul li img{
+	width: 298px;
+	height: 298px;
+}
+.box3-1{
+	padding: 10px;
+	background: #fff;
+	position: relative;
+}
+.box3-1 dl{
+	height: 405px;
+}
+.box3-1 dl dt{
+	float: left;
+	width: 298px;
+	height: 298px;
+}
+.box3-1 dl dd{
+	
+}
+.tit-p1{
+	margin-top: 18px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 10px;
+	overflow: hidden;
+	font-size: 16px;
+	font-weight: 400;
+}
+.tit-p2{
+	color: #f70800;
+	margin-top: 5px;
+	overflow: hidden;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	padding: 0 10px;
+}
+.index-price{
+	margin-top: 20px;
+	height: 26px;
+	padding: 0 10px 3px 10px;
+}
+.pri1{
+	float: left;
+	font-size: 26px;
+	color: #222;
+	margin-right: 10px;
+}
+.pri2{
+	position: relative;
+	margin-top: 10px;
+	color: #999;
+	font-size: 14px;
+	float: left;
+}
+.pri2p1{
+	position: absolute;
+	top: -18px;
+	left: 0;
+	width: 200px;
+}
+.pri2p1 .prib{
+	width: 24px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 10px;
+	padding: 0 5px;
+	margin-right: 5px;
+}
+.pri2p1 .b1{
+	background: #ff3175;
+}
+.pri3{
+	float: right;
+	color: #999;
+	margin-top: 9px;
+}
+.pri3 b{
+	float: left;
+	color: #f70800;
+}
+.huoyuan{
+	height: 32px;
+	line-height: 32px;
+	background: #f8f8f8;
+	color: #666;
+	font-size: 12px;
+	border-top: 1px solid #eee;
+	padding: 0 20px;
 }

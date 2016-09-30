@@ -1,0 +1,45 @@
+/*
+* @Author: 792675704
+* @Date:   2016-09-30 15:38:48
+* @Last Modified by:   792675704
+* @Last Modified time: 2016-09-30 15:58:46
+*/
+#footer{
+	height: auto;
+	border-top: 1px solid #e3e3e3;
+}
+.footer1{
+	height: 100px;
+	float: left;
+	background: #f6f6f6;
+	border-top: 1px solid #e6e6e6;
+}
+.footer2{
+	height: 167px;
+	float: left;
+	border-bottom: 1px solid #e6e6e6;
+}
+.footer2 ul{
+
+	
+	padding: 26px 0 26px 75px;
+}
+.footer2 ul li{
+	float: left;
+	width: 95px;
+	height: 114px;
+	padding-left: 42px;
+	border-right: 1px solid #e6e6e6;
+	text-align: left;
+}
+.footer2 ul li a{
+	display: block;
+	height: 22px;
+	line-height: 22px;
+}
+.fter2-tit{
+	color: #333;
+	font-size: 16px;
+	height: 26px;
+	line-height: 26px;
+}

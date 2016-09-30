@@ -2,7 +2,7 @@
 * @Author: 792675704
 * @Date:   2016-09-29 21:20:36
 * @Last Modified by:   792675704
-* @Last Modified time: 2016-09-29 21:20:58
+* @Last Modified time: 2016-09-30 11:27:19
 */
 $(function(){
 	var banner={
@@ -26,9 +26,9 @@ $(function(){
 			//console.log(firstimg.width())
 			//.banner .imgwrap
 			
-				this.imgs.width(screen.width)
-		$('.imgwrap').width(screen.width*6)
-			console.log($('.imgwrap').width())
+				//this.imgs.width(screen.width)
+		//$('.imgwrap').width(screen.width*6)
+			//console.log($('.imgwrap').width())
 			//改变imgw的偏移量
 			this.imgw.width(this.imglength*this.imgwidth)
 
