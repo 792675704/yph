@@ -2,7 +2,7 @@
 * @Author: 792675704
 * @Date:   2016-09-30 15:38:48
 * @Last Modified by:   792675704
-* @Last Modified time: 2016-09-30 15:58:46
+* @Last Modified time: 2016-10-06 16:52:36
 */
 #footer{
 	height: auto;
@@ -10,18 +10,14 @@
 }
 .footer1{
 	height: 100px;
-	float: left;
 	background: #f6f6f6;
 	border-top: 1px solid #e6e6e6;
 }
 .footer2{
 	height: 167px;
-	float: left;
 	border-bottom: 1px solid #e6e6e6;
 }
 .footer2 ul{
-
-	
 	padding: 26px 0 26px 75px;
 }
 .footer2 ul li{
@@ -37,9 +33,67 @@
 	height: 22px;
 	line-height: 22px;
 }
+.footer2 ul li a:hover{
+	color: #f70800;
+}
+.footer2 ul .fter2end{
+	border: 0;
+	padding-left: 20px;
+	text-align: center;
+}
+.fter2end p{
+	line-height: 14px;
+}
+.fter2end p span{
+	color: #999;
+}
+.footer2 ul .fter2end a:hover{
+	color: #555;
+}
+.fter2img{
+	padding-top: 24px;
+}
+/* .fter2endp{
+	font-size: 26px;
+} */
 .fter2-tit{
 	color: #333;
 	font-size: 16px;
 	height: 26px;
 	line-height: 26px;
+}
+.footer3{
+	height: 150px;
+}
+.endul{
+	width: 900px;
+	margin: auto;
+}
+.endul li{
+	float: left;
+	line-height: 40px;
+	margin-top: 8px;
+}
+.endul li a{
+	color: #555;
+	border-right: 1px solid #888;
+	padding: 0 10px;
+	font-size: 14px;
+}
+.endul li a:hover{
+	color: #f70800;
+}
+.endp1{
+	width: 1000px;
+	line-height: 22px;
+	color: #555;
+	float: left;
+	text-align: center;
+}
+.endp1 a{
+	color: #555;
+	padding-left: 10px;
+}
+.endp1 a:hover{
+	color: #f70800;
 }
