@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2016-09-28 21:20:09
 * @Last Modified by:   792675704
-* @Last Modified time: 2016-09-30 11:41:01
+* @Last Modified time: 2016-10-08 14:34:58
 */
 
 
@@ -20,6 +20,14 @@ $(function(){
 		$('.newsul').append(newList); 
 		$('.newsul :first').remove(); 
 	},2000); 
+})
+//cart
+$(function(){
+	$('.cart').hover(function() {
+		$('.inlist').css("display","block")
+	}, function() {
+		$('.inlist').css("display","none")
+	});
 })
 // 分类的js
 $(function(){

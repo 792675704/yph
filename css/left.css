@@ -1,3 +1,6 @@
+body{
+	height: 3000px;
+}
 #left{
 	z-index: 1200;
 	width: 36px;
@@ -28,10 +31,7 @@
 	z-index: 3;
 	position: absolute;
 }
-/* .care{
-	width: 36px;
-	height: 36px;
-} */
+ 
 .user-c1{
 	background-position: 0 0;
 }
@@ -119,3 +119,102 @@
 .user-c7:hover{
 	background-position: -46px -276px;
 }
+ .care{
+	width: 36px;
+	height: 36px;
+	position: relative;
+}
+.care_left1{
+	position: absolute;
+	width: 257px;
+	height: 228px;
+	right: 36px;
+	top: 0;
+	padding: 2px;
+	display: none;
+	background-image: url(../img/centerbj.jpg);
+	background-repeat:no-repeat;
+}
+.closel{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: #888;
+	cursor: pointer;
+}
+.left_ren{
+	width: 72px;
+	height: 72px;
+	margin: auto;
+	margin-top: 30px;
+	display: block;
+}
+.left_login{
+	text-align: center;
+	margin-top: 10px;
+}
+.left_a{
+	color: #f70800;
+}
+.left_login2{
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+	background: #f8f8f8;
+	width: 207px;
+	padding: 16px 25px;
+}
+.left_a2{
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	display: inline-block;
+	width: 88px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #222;
+}
+.left_a2:hover{
+	border: 1px solid #f70800;
+}
+.left_a3{
+	width: 90px;
+	height: 36px;
+	line-height: 36px;
+	right: 36px;
+	top: 0;
+	text-align: center;
+	position: absolute;
+	background: url(../img/left.png) 0 -412px;
+	background-repeat:no-repeat;
+}
+.left_a4{
+	width: 132px;
+	height: 182px;
+	right: 36px;
+	top: 50%;
+	margin-top: -91px;
+	position: absolute;
+}
+.left_a3 a{
+	color: #fff;
+}
+.user-c22{
+	display: none;
+}
+.user-c23{
+	display: none;
+}
+.user-c24{
+	display: none;
+}
+.user-c25{
+	display: none;
+}
+.user-c26{
+	display: none;
+}
+.user-c27{
+	display: none;
+

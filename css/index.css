@@ -166,7 +166,7 @@ body{font-family: "微软雅黑"; font-size: 12px;}
 	line-height: 25px;
 }
 .mycart{
-	float: left;
+	float: right;
 	position: relative;
 	height: 32px;
 }
@@ -174,7 +174,68 @@ body{font-family: "微软雅黑"; font-size: 12px;}
 	display: block;
 	width: 138px;
 	height: 30px;
+	/* position: absolute;
+	top: 0;
+	left: -200px;
+	z-index: 110; */
 	border: 1px solid #ddd;
+}
+.cart:hover{
+	border-bottom: 0;
+}
+.incart1{
+	position: absolute;
+	top: 5px;
+	left: 14px;
+	width: 20px;
+	height: 18px;
+	display: block;
+}
+.incart2{
+	display: block;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	width: 11px;
+	height: 7px;
+	background: url(../img/icon.png) -189px -59px;
+	background-repeat:no-repeat;
+}
+.cart:hover .incart2{
+	background: url(../img/icon.png) -189px 0;
+	background-repeat:no-repeat;
+}
+.incart3{
+	display: block;
+	text-align: center;
+	line-height: 28px;
+}
+.incart4{
+	position: absolute;
+	display: block;
+	width: 22px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+	right: 22px;
+	top: -4px;
+	background: url(../img/icon.png) 0 -100px;
+	background-repeat:no-repeat;
+}
+.inlist{
+	position: absolute;
+	top: 30px;
+	right: 0;
+	border: 1px solid #ddd;
+	width: 248px;
+	padding: 20px;
+	z-index: 100;
+	background: #fff;
+	text-align: center;
+	display: none;
+	
 }
 /* nav */
 #nav{
@@ -396,9 +457,311 @@ margin-top: -15px;
 	width: 100%;
 	padding-bottom: 30px;
 	background: #f2f2f2;
+	overflow: hidden;
 }
 .index-box1{
+	height: 402px;
+	margin-top: 20px;
+}
+.box1_left{
+	width: 698px;
 	height: 400px;
+	position: relative;
+	border: 1px solid #ddd;
+	background: #fff;
+	float: left;
+}
+.banner-img{
+    height: 420px;
+    overflow: hidden;
+}
+.banner-img ul{
+    overflow: hidden;
+    height: 305px;
+    border-bottom: 1px solid #ddd;
+}
+.banner-img li{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 305px;
+    display: none;
+}
+.banner-img li:nth-child(1){
+    display: block;
+}
+.banner-img li a{
+    width: 812px;
+    height: 420px;
+    position: absolute;
+    left: 50%;
+    top:0;
+    margin-left: -406px;
+}
+.banner-img li img{
+	float:left;
+	width:340px;
+    height: 305px;
+    max-width: 100%;
+}
+.ban2{
+	float: left;
+	padding: 20px;
+}
+.ban2 h3{
+	color: #333;
+	font-weight: bold;
+	width: 290px;
+	overflow: hidden;
+	height: 22px;
+	line-height: 22px;
+	font-size: 18px;
+}
+.ban2p{
+	color: #666;
+	font-size: 12px;
+	margin-top: 5px;
+	line-height: 16px;
+	height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 290px;
+}
+.ban2price{
+	position: relative;
+	margin-top: 15px;
+}
+.ban2pri1{
+	float: left;
+	font-size: 26px;
+	color: #f70800;
+	margin-right: 10px;
+}
+.ban2jia{
+	margin-top: 25px;
+	width: 290px;
+	float: left;
+}
+#ban2img{
+	width: 28px;
+	height: 28px;
+	float: left;
+}
+#ban2img img{
+	width: 28px;
+	height: 28px;
+}
+.ban2phone{
+	float: right;
+	width: 250px;
+}
+.phone1{
+	color: #666;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+}
+.phone2{
+	margin-top: 5px;
+	color: #999;
+	line-height: 18px;
+	height: 55px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.banner-img .arrow{
+	float: left;
+	width: 30px;
+	height: 50px;
+	line-height: 50px;
+	color: #ddd;
+	text-align: center;
+	font-size: 22px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	font-weight: 100;
+	position: absolute;
+	top:170px;
+	left: 50%;
+	z-index: 8;
+	cursor: pointer;
+}
+.banner-img .arrow.arrow-left{
+	margin-left:-350px;
+}
+.banner-img .arrow.arrow-right{
+	margin-left:318px;
+}
+.ad-title{
+	position: absolute;
+	bottom: 0;
+	height:100px;
+	z-index: 600;
+}
+.ad-title img{
+	width:66px;
+	height: 66px;
+	margin: 14px 10px 10px 10px;
+	}
+.cur{
+	background: url(../img/btng.png);
+	background-repeat:no-repeat;
+}
+.ad-title a{
+	float:left;
+	display:block;
+	width:90px;
+	height: 90px;
+}
+.ban3{
+	height: 80px;
+	overflow: hidden;
+	position: relative;
+}
+.ban3 ul{
+	width: 2970px;
+	position: absolute;
+}
+.ban3 ul li{
+	position: relative;
+	float: left;
+	height: 80px;
+	overflow: hidden;
+	width: 270px;
+}
+.ban3 ul li a{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-right: 10px;
+	float: left;
+	position: relative;
+}
+.ban3 ul li a img{
+	width: 80px;
+	height: 80px;
+}
+.ban3_left{
+	position: absolute;
+	top: 22px;
+	left: -10px;
+	width: 20px;
+	height: 46px;
+	cursor: pointer;
+	color: #fff;
+	background: #ddd;
+}
+.ban3_right{
+	position: absolute;
+	top: 22px;
+	right: -10px;
+	width: 20px;
+	height: 46px;
+	cursor: pointer;
+	color: #fff;
+	background: #ddd;
+}
+/* banner2   end */
+.ban2right{
+	float: left;
+	width: 288px;
+	height: 400px;
+	border: 1px solid #ddd;
+	margin-left: 10px;
+	background: #fff;
+}
+.ban2right1{
+	height: 21px;
+	border-bottom: 1px solid #eee;
+	padding: 12px 0 7px 15px;
+	overflow: hidden;
+}
+.ban2right2{
+	height: 115px;
+	padding: 20px 0;
+	margin: 0 15px;
+	overflow: hidden;
+	border-bottom: 1px dotted #eee;
+}
+.ban2right2 dt{
+	float: left;
+	margin-right: 15px;
+	position: relative;
+	height: 115px;
+	overflow: hidden;
+	width: 115px;
+}
+.ban2right2 dt img{
+	height: 115px;
+	width: 115px;
+}
+.ban2right2 dd{
+	float: left;
+	width: 128px;
+}
+.ban2dtp1{
+	color: #444;
+	line-height: 16px;
+	height: 32px;
+	float: left;
+}
+.ban2dtp2{
+	float: left;
+	margin-top: 5px;
+	color: #666;
+	padding-left: 13px;
+	line-height: 16px;
+	height: 16px;
+	background: url(../img/btn2.png) -45px -178px;
+	background-repeat:no-repeat;
+}
+.ban2dtp3{
+	margin-top: 8px;
+	width: 90px;
+	height: 23px;
+	line-height: 23px;
+	color: #fff;
+	background: #ff504a;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 3px;
+	float: left;
+}
+.ban2right3{
+	padding: 15px 0 20px 0;
+	margin: 0 15px;
+	border-bottom: 1px dotted #eee;
+}
+.ftit{
+	font-size: 12px;
+	color: #444;
+	font-weight: bold;
+}
+.ftit span{
+	color: #f70800;
+}
+.tvshow{
+	margin-top: 10px;
+	height: 80px;
+	position: relative;
+}
+.ban2right4{
+	padding: 15px 15px 10px 18px;
+	overflow: hidden;
+	float: left;
+	width: 300px;
+}
+.ban2right4 a{
+	width: 60px;
+	float: left;
+	text-align: center;
+	margin-right: 35px;
+	display: inline;
+	color: #666;
+}
+.ban2right4 p{
+	margin-top: 3px;
 }
 .index-box2{
 	height: 640px;

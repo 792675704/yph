@@ -2,7 +2,7 @@
 * @Author: 792675704
 * @Date:   2016-09-29 21:20:36
 * @Last Modified by:   792675704
-* @Last Modified time: 2016-09-30 11:27:19
+* @Last Modified time: 2016-10-08 21:33:02
 */
 $(function(){
 	var banner={
@@ -100,6 +100,131 @@ $(function(){
 			this.circles.click(function(){
 				that.index=$(this).index()+1
 				that.switchImg();
+			})
+		}
+	}
+	banner.init();
+})
+//banner2
+/*全屏轮播图*/
+$(function () {
+    var banner = {
+        init: function () {
+            this.list = $(".banner-img ul li");
+            this.arrow = $(".arrow");
+            this.arrowLeft = $(".arrow-left");
+            this.arrowRight = $(".arrow-right");
+            this.adTitle = $('.ad-title a')
+            this.now = 0;
+            this.num = 0;
+            this.tiner = null;
+            this.autoplay();
+            this.mouseover();
+            this.leftClick();
+            this.rightClick();
+            this.circlemove();
+        },
+        /*定时器*/
+        autoplay: function () {
+            var that = this;
+            this.timer = setInterval(function () {
+                that.num++;
+                that.num%= that.list.length;
+                that.fade();
+            },3000)
+        },
+        /*淡出淡入的交替*/
+        fade: function () {
+           // console.log(this.now , this.num)
+            this.list.eq(this.now).fadeOut(1000);
+            this.list.eq(this.num).fadeIn(1000);
+
+            this.now =  this.num;
+            this.adTitle.eq(this.num).addClass("cur").siblings().removeClass("cur");
+        },
+        /*鼠标移入移出*/
+        mouseover:function () {
+            var that = this;
+            $(".banner-img").hover(function () {
+                clearInterval(that.timer);
+            },function () {
+                that.autoplay();
+            })
+        },
+        /*点击切换上一张图片*/
+        leftClick: function () {
+            var that = this;
+            this.arrowLeft.click(function () {
+                that.num--;
+                that.num%= that.list.length;
+                if(that.num<=0){
+                    that.num=5;
+                }
+                console.log(that.num)
+                that.fade();
+            })
+        },
+        /*点击切换下一张图片*/
+        rightClick: function () {
+            var that = this;
+            this.arrowRight.click(function () {
+                that.num++;
+                that.num%= that.list.length;
+                console.log(that.num)
+                that.fade();
+            })
+        },
+        /*鼠标移入切换当前图片*/
+        circlemove:function () {
+            var that = this;
+            this.adTitle.mouseenter(function () {
+                that.num = $(this).index();
+                that.fade();
+            })
+        }
+    };
+    banner.init();
+});
+//ban3
+$(function(){
+	var banner={
+		init:function(){
+			this.Left = $(".ban3_left");
+            this.Right = $(".ban3_right");
+            this.wrap3=$(".ban3wrap")
+            this.liwudth=this.wrap3.find("li").first().width();
+            this.listwudth=this.wrap3.find("li")
+			this.nextclick();
+			this.preclick();
+			this.index=0;
+		},
+		switchImg:function(){//circles ciritem
+			var that=this;
+			this.wrap3.stop().animate({
+				left:-that.index*that.liwudth
+			}, 1000)
+		},
+		nextclick:function(){
+			var that=this;
+			this.Left.click(function(){
+				that.index--;
+				if (that.index <= 0) {
+					that.index = 0
+				};
+				console.log(that.index)
+				that.switchImg();
+			})
+		},
+		preclick:function(){
+			var that=this;
+			this.Right.click(function(){
+				that.index++;
+				if (that.index >= 8) {
+					that.index = 8;
+				};
+				console.log(that.index)
+				that.switchImg();
+
 			})
 		}
 	}
