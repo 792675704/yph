@@ -3,7 +3,100 @@
     <head>
         <meta charset="utf-8">
         <title>优品惠</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/left.css">
+        <link rel="stylesheet" href="css/bottom.css">
     </head>
     <body>
+    	<!-- top-nav -->
+    	<div id="top-nav">
+    		<div class="center top-nav">
+    			<ul class="top-left-ul">
+    				<li><a href="#">注册</a></li>
+    				<li><a href="#">登录</a></li>
+    				<li><a href="#">我的订单</a></li>
+    				<li><a href="#">物流查询</a></li>
+    				<li><a href="#">我的关注</a></li>
+    				<li><a href="#">资讯</a></li>
+    				<li><a href="#">品牌馆</a></li>
+    				<li class="wei"><a style="border:0;" href="#"><b><img src="img/phone.png"></b>手机优品惠</a>
+                        <div class="sao">
+                            <div class="sao1">
+                                <img src="img/sao.jpg" alt="">
+                                <p>扫一扫哦~</p>
+                            </div>
+                        </div>
+                    </li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="ce-center">
+    		<img class="left_wei" src="img/logEWM.gif" alt="">
+    		<div class="ce_logo">
+    			<div class="ce-img">
+    				<a href="#"><img src="img/celogo1.jpg" alt=""></a>
+    				<span><img src="img/celogo.jpg" alt=""></span>
+    			</div>
+    			<p class="ce_gop">如有问题请点击<a href="#">帮助中心</a>，或拨打客服热线：<span>400-707-0707</span></p>
+    		</div>
+    		<div class="ce_con">
+    			<div class="ce_con_left">
+    				<form class="form1" action="" method="">
+    					<div class="form-item">
+                            <p>手机号/邮箱/昵称</p>
+                            <!-- <span class="ce_d"></span> -->
+                            <span></span>
+							<input type="text" name="username" class="ceput1 inp1" placeholder="请输入您注册的手机号/邮箱/昵称">
+                            <div class="ce_d1 cyin1">
+                                请输入您注册的手机号/邮箱/昵称
+                            </div>
+                            <div class="ce_d1 cyin2">
+                                您输入的用户名不存在，请核对后重新输入！
+                            </div>
+						</div>
+						<div class="form-item">
+                            <p>密码</p>
+							<input type="password" name="password"  class="ceput1 inp2">
+                            <div class="ce_d1 cyin3">
+                                请输入密码
+                            </div>
+                            <div class="ce_d1 cyin4">
+                                密码错误，请重新输入！
+                            </div>
+						</div>
+                        <div class="form-item">
+                            <input type="checkbox">
+                            <p class="ce_jz">记住用户名</p>
+                            <a class="ce_a" href="#">忘记密码？</a>
+                        </div>
+						<div class="form-item">
+							<button type="button" class="login-btn">登录</button>
+						</div>
+    				</form>
+    			</div>
+    			<div class="ce_con_right">
+    				<div class="cerit1">
+    					<p>您还不是优品惠的会员？</p>
+    					<a href="#">免费注册 ></a>
+    				</div>
+    				<div class="cerit1 ritbtm">
+    					<p>电话订购过优品惠商品？</p>
+    					<a href="#">快速激活 ></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+        <div class="end" style="height:500px;">   
+        </div>
+        <div class="bdleft"></div>
+    	<script src="js/jquery-1.11.3.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/border-left.js"></script>
+        <script src="js/login.js"></script>
+        <script> 
+                $('.end').load('bottom.html')
+        </script>
     </body>
 </html>

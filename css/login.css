@@ -1,0 +1,163 @@
+/*
+* @Author: 792675704
+* @Date:   2016-10-09 09:42:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-10-09 19:59:37
+*/
+.ce-center{
+	width: 968px;
+	margin: auto;
+	padding-bottom: 50px;
+}
+.left_wei{
+	position: absolute;
+	top: 152px;
+	left: 0;
+}
+.ce_logo{
+	height: 112px;
+}
+.ce-img{
+	float: left;
+	height: 57px;
+	margin-top: 31px;
+}
+.ce-img a{
+	width: 185px;
+	float: left;
+	display: block;
+	height: 57px;
+	overflow: hidden;
+}
+.ce-img span{
+	float: left;
+	display: block;
+	height: 57px;
+	overflow: hidden;
+}
+.ce_gop{
+	float: right;
+	color: #555;
+	padding-top: 70px;
+}
+.ce_gop a{
+	color: #0089cf;
+}
+.ce_gop span{
+	color: #eb0007;
+	font-size: 16px;
+}
+.ce_con{
+	width: 964px;
+	height: 374px;
+	border: 2px solid #ff8400;
+}
+.ce_con_left{
+	float: left;
+	width: 475px;
+	padding-left: 133px;
+	color: #666;
+	padding-top: 62px;
+}
+.form-item {
+	width: 338px;
+	height: 65px;
+	position: relative;
+}
+.ceput1{
+	font-size: 14px;
+	border: 1px solid #666;
+	color: #222;
+	padding: 5px 25px 5px 10px;
+	height: 25px;
+	line-height: 25px;
+	width: 300px;
+}
+.form-item input {
+	outline: none;
+	float: left;
+}
+.ce_d{
+	position: absolute;
+	color: #CFCDCD;
+	top: 27px;
+	left: 10px;
+}
+.ce_jz{
+	width: 100px;
+	float: left;
+}
+.ce_a{
+	color: #0089cf;
+	float: right;
+}
+.login-btn{
+	width: 338px;
+	height: 37px;
+	line-height: 37px;
+	cursor: pointer;
+	color: #fff;
+	border: 0;
+	outline: none;
+	background: #F11C44;
+}
+.ce_d1{
+	height: 20px;
+	position: absolute;
+	width: 325px;
+	padding-left: 10px;
+	line-height: 20px;
+	border: 1px solid #ffadb0;
+	left: 0;
+	top: 54px;
+	background: #fff3f3;
+	z-index: 100;
+}
+.cyin1{
+	display: none;
+}
+.cyin2{
+	display: none;
+}
+.cyin3{
+	display: none;
+}
+.cyin4{
+	display: none;
+}
+.form-item input.focus1 {
+	border-color: #ffadb0;
+}
+.form-item input.focus {
+	border-color: #8f9;
+}
+.ce_con_right{
+	float: right;
+	width: 271px;
+	background: #fff6ec;
+	height: 316px;
+	padding-left: 82px;
+	padding-top: 58px;
+}
+.cerit1{
+	width: 219px;
+	height: 57px;
+}
+.cerit1 p{
+	font-size: 14px;
+	color: #555;
+}
+.cerit1 a{
+	display: block;
+	width: 142px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #ff6000;
+	margin-top: 10px;
+	border: 1px solid #ff6000;
+	border-radius: 3px;
+}
+.ritbtm{
+	margin-top: 42px;
+}

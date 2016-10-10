@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>优品惠</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/registered.css">
+        <link rel="stylesheet" href="css/left.css">
+        <link rel="stylesheet" href="css/bottom.css">
+    </head>
+    <body>
+    	<!-- top-nav -->
+    	<div id="top-nav">
+    		<div class="center top-nav">
+    			<ul class="top-left-ul">
+    				<li><a href="#">注册</a></li>
+    				<li><a href="#">登录</a></li>
+    				<li><a href="#">我的订单</a></li>
+    				<li><a href="#">物流查询</a></li>
+    				<li><a href="#">我的关注</a></li>
+    				<li><a href="#">资讯</a></li>
+    				<li><a href="#">品牌馆</a></li>
+    				<li class="wei"><a style="border:0;" href="#"><b><img src="img/phone.png"></b>手机优品惠</a>
+                        <div class="sao">
+                            <div class="sao1">
+                                <img src="img/sao.jpg" alt="">
+                                <p>扫一扫哦~</p>
+                            </div>
+                        </div>
+                    </li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="ce-center">
+    		<img class="left_wei" src="img/logEWM.gif" alt="">
+    		<div class="ce_logo">
+    			<div class="ce-img">
+    				<a href="#"><img src="img/celogo1.jpg" alt=""></a>
+    				<span><img src="img/celogo.jpg" alt=""></span>
+    			</div>
+    			<p class="ce_gop">如有问题请点击<a href="#">帮助中心</a>，或拨打客服热线：<span>400-707-0707</span></p>
+    		</div>
+    		<div class="res_con">
+    			<div class="tabnav">
+                    <ul>
+                        <li class="navitem active">手机注册</li>
+                        <li class="navitem">电视用户激活</li>
+                    </ul>
+                </div>
+                <div class="tabcont">
+                    <div class="contitem active">
+                        <form action="" method="">
+                            <div class="formitem">
+                                <label>手机号：</label>
+                                <input class="reg1" type="text" name="user" class="">
+                                <div class="re_yin regc1 regs1">
+                                    请输入常用手机号，避免忘记
+                                </div>
+                                <div class="re_yin regc2 regs2">
+                                    请输入手机号
+                                </div>
+                                <div class="re_yin regc2 regs3">
+                                    手机格式不正确，请核对后再输入
+                                </div>
+                            </div>
+                            <div class="formitem">
+                                <label>验证码：</label>
+                                <input class="reg2" type="text">
+                            </div>
+                            <div class="formitem">
+                                <label>设置密码：</label>
+                                <input class="reg1" type="password">
+                                <div class="re_yin regc1 regm1">
+                                    6-20位字符，可使用字母，数字或符号的组合
+                                </div>
+                                <div class="re_yin regc2 regm2">
+                                    请输入密码
+                                </div>
+                                <div class="re_yin regc2 regm3">
+                                    密码长度应是6-20位字符，请重新输入
+                                </div>
+                            </div>
+                            <div class="formitem">
+                                <label>确认密码：</label>
+                                <input class="reg1" type="password">
+                                <div class="re_yin regc1 regq1">
+                                    请再次输入密码
+                                </div>
+                                <div class="re_yin regc2 regq2">
+                                    请确认密码！
+                                </div>
+                                <div class="re_yin regc2 regq3">
+                                    两次输入的密码不一致，请重新输入
+                                </div>
+                            </div>
+                            <div class="formitem">
+                                <label>短信验证码：</label>
+                                <input class="reg2" type="text">
+                                <input id="reg_btnd" type="button" value="获取短信验证码">
+                            </div>
+                            <div class="formitem">
+                                <label></label>
+                                <input type="checkbox">
+                                <p class="regp">
+                                    &nbsp;我已阅读并同意<a href="#">《优品惠用户服务承诺》</a>
+                                </p>
+                            </div>
+                            <div class="formitem">
+                                <label></label>
+                                <button type="button" class="reg-btn">提交</button>
+                            </div>
+                            <div class="formitem">
+                                <label></label>
+                                <p class="regp">如有问题请点击<a href="#">帮助中心</a>，或拨打客服热线：<span>400-707-0707</span></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contitem">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                </div>
+    		</div>
+    	</div>
+        <div class="end" style="height:500px;">   
+        </div>
+        <div class="bdleft"></div>
+    	<script src="js/jquery-1.11.3.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/border-left.js"></script>
+        <script src="js/registered.js"></script>
+        <script> 
+                $('.end').load('bottom.html')
+        </script>
+        <script> 
+                $('.bdleft').load('left.html')
+        </script>
+    </body>
+</html>

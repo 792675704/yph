@@ -2,7 +2,7 @@
 * @Author: 792675704
 * @Date:   2016-09-29 21:20:36
 * @Last Modified by:   792675704
-* @Last Modified time: 2016-10-08 21:33:02
+* @Last Modified time: 2016-10-08 22:03:01
 */
 $(function(){
 	var banner={
@@ -136,8 +136,8 @@ $(function () {
         /*淡出淡入的交替*/
         fade: function () {
            // console.log(this.now , this.num)
-            this.list.eq(this.now).fadeOut(1000);
-            this.list.eq(this.num).fadeIn(1000);
+            this.list.eq(this.now).fadeOut(500);
+            this.list.eq(this.num).fadeIn(500);
 
             this.now =  this.num;
             this.adTitle.eq(this.num).addClass("cur").siblings().removeClass("cur");

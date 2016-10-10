@@ -1,0 +1,151 @@
+.res_con{
+	height: 500px;
+	width: 968px;
+}
+.tabnav{
+    height:42px;
+    line-height:42px;
+}
+.tabnav .navitem{
+	display: block;
+	float: left;
+	margin-right: 2px;
+	width: 225px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	background: #F2F2F2;
+	color: #777;
+	border-radius: 3px 3px 0 0;
+    cursor:pointer;
+}
+/* .tabnav .navitem:hover{
+    background-color:#aaa;
+    color:#fff;
+} */
+.tabnav .navitem.active{
+    background-color:#FF8400;
+    color:#fff;
+    font-weight:600;
+}
+.tabcont .contitem,
+.tabcont .contitem {
+    width:100%;
+    height:100%;
+}
+.tabcont .contitem{
+    display:none;
+}
+.tabcont .contitem.active{
+    display:block;
+}
+
+.contitem{
+	width: 100%;
+}
+.contitem img{
+	width: 500px;
+	height: 300px;
+}
+.tabcont{
+	height: 405px;
+	width: 964px;
+	padding-top: 45px;
+	border:2px solid #ff8400;
+}
+.formitem {
+	height: 52px;
+	position: relative;
+}
+.formitem label {
+	display: block;
+	text-align: right;
+	width: 187px;
+	padding-right: 15px;
+	height: 37px;
+	line-height: 37px;
+	color: #666;
+	font-size: 12px;
+	float: left;
+}
+.formitem input {
+	float: left;
+	
+}
+.reg1{
+	width: 314px;
+	height: 25px;
+	line-height: 25px;
+	padding: 5px 25px 5px 10px;
+	border: 0;
+	border:1px solid #a2a2a2;
+	outline: none;
+}
+.formitem input.focus {
+	border-color: #9f9;
+}
+.reg2{
+	color: #222;
+	width: 102px;
+	height: 25px;
+	line-height: 25px;
+	height: 25px;
+	line-height: 25px;
+	padding: 5px 25px 5px 10px;
+	border: 0;
+	border:1px solid #a2a2a2;
+	outline: none;
+}
+#reg_btnd{
+	width: 116px;
+	height: 26px;
+	cursor: pointer;
+	margin: 6px 0 0 10px;
+	display: block;
+	line-height: 26px;
+	text-align: center;
+	color: #888;
+	border: 0;
+	outline: none;
+	border:1px solid #a2a2a2;
+	background: #FCFCFC;
+	border-radius: 2px;
+}
+.regp{
+	line-height: 12px;
+}
+.regp a{
+	color: #0089cf;
+}
+.reg-btn{
+	width: 126px;
+	height: 33px;
+	border: 0;
+	background: #E50038;
+	margin-bottom: 40px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 2px;
+}
+.re_yin{
+	width: 270px;
+	height: 35px;
+	padding-left: 9px;
+	
+	left: 560px;
+	top: 0;
+	line-height: 35px;
+	position: absolute;
+}
+.regc1{
+	background: #f6f6f6;
+	color: #555;
+	border: 1px solid #e9e9e9;
+}
+.regc2{
+	background: #fff3f3;
+	color: #eb0007;
+	border:1px solid #ffadb0;
+}
