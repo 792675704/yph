@@ -210,13 +210,13 @@
                 </p>
                 <div class="fdj_box3_2">
                     <a href="#">
-                        <span><img src="img/gzq.jpg" alt=""></span>
+                        <span><img src="img/fenx1.png" alt=""></span>
                         <span>分享</span>
                     </a>
                 </div>
                 <div class="fdj_box3_2">
                     <a href="#">
-                        <span><img src="img/gzq.jpg" alt=""></span>
+                        <span><img src="img/scx.png" alt=""></span>
                         <span>分享</span>
                     </a>
                 </div>
@@ -245,14 +245,14 @@
                         <div class="item-title">送至</div>
                         <div class="item-content xqy_map">
                             <span class="maptit">请选择地区</span>
-                            
+                            <span class="maptitbj"><img src="img/maps1.png"></span>
                             <div class="map_tab">
                                 <span class="mapcolse">x</span>
                                 <div class="map_top">
                                     <ul>
-                                        <li class="map_nav mapact">河北</li>
-                                        <li class="map_nav">邯郸</li>
-                                        <li class="map_nav">大名县</li>
+                                        <li class="map_nav mapact">河北<span class="mptbj"></span></li>
+                                        <li class="map_nav">邯郸<span class="mptbj"></span></li>
+                                        <li class="map_nav">大名县<span class="mptbj"></span></li>
                                     </ul>
                                 </div>
                                 <div class="map_btm">
@@ -320,40 +320,31 @@
                     <div class="option-item">
                         <div class="item-title xqy_ks">款式</div>
                         <div class="item-content goods-style">
-                            <div class="g-s-item selected" data-gid="10001">
+                            <div class="g-s-item selected csan" data-gid="10001">
                                 <img src="img/fd1.jpg">
+                                <span class="bjsan"></span>
                             </div>
-                            <div class="g-s-item" data-gid="10002">
+                            <div class="g-s-item csan" data-gid="10002">
                                 <img src="img/fd4.jpg">
+                                <span class="bjsan"></span>
+                            </div>
+                            <div class="g-s-item csan" data-gid="10003">
+                                <img src="img/fd5.jpg">
+                                <span class="bjsan"></span>
                             </div>
                         </div>
                     </div>
                     <div class="option-item">
                         <div class="item-title">尺码</div>
-                        <ul>
-                            <li class="item-content goods-size">ONE</li>
+                        <ul class="cmul">
+                            <li class="item-content goods-size cmli2">ONE</li>
                             <li class="item-content goods-size">M</li>
                             <li class="item-content goods-size">L</li>
                             <li class="item-content goods-size">S</li>
                         </ul>
-                        <div class="xqy_cc">
-                            <div class="modalbtn">
-                                <span></span>
-                                <span>尺码表</span>
-                            </div>
-                            <!-- <div class="xqy_modal">
-                                <div class="modal-bg"></div>
-                                <div class="modal_con">
-                                    <span class="modalclose">x</span>
-                                    <div class="modalimg">
-                                        <img src="img/modal.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <!-- <div class="item-content goods-size">ONE</div>
-                        <div class="item-content goods-size">M</div>
-                        <div class="item-content goods-size">L</div> -->
+                        <a class="xqy_cc">
+                             <span class="modalbtn"><img src="img/biaoc.png">尺码表</span>
+                        </a>
                     </div>
                     <div class="option-item">
                         <div class="item-title">数量</div>
@@ -370,7 +361,7 @@
                         <div class="item-title">&nbsp;</div>
                         <div class="item-content goods-buy">
                             <!-- <div class="buy-now">立即购买</div> -->
-                            <div class="add-cart">加入购物车</div>
+                            <div class="add-cart fly">加入购物车</div>
                         </div>
                     </div>
                 </div>
@@ -399,8 +390,27 @@
     <script src="js/border-left.js"></script>
     <script src="js/xqy.js"></script>
     <script src="js/xqy-cart.js"></script>
+    <script src="js/jquery.fly.min.js"></script>
     <script> 
             $('.end').load('bottom.html')
     </script>
+    <script>
+    $('.fly').on('click', addCart);
+        function addCart(event) {
+        var offset = $('.user-c2').offset(), flyer = $('<img class="flyimg" src="img/fd1.jpg">');
+        flyer.fly({
+            start: {
+                left: event.pageX,
+                top: event.pageY
+            },
+            end: {
+                left: offset.left,
+                top: offset.top,
+                width: 20,
+                height: 20
+            }
+        });
+        }
+    </script> 
 </body>
 </html>

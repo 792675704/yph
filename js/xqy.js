@@ -53,7 +53,7 @@ $(function(){
 		};
 		magnify.init();
 	})
-//li
+//放大镜修改属性
 $(function(){
 	$('.fdj_ul2 li').click(function(){
 		var scrs = $(this).find('img').attr("src")
@@ -156,5 +156,26 @@ $(function(){
 		if(!$(e.target).is('.modalimg,.modalimg *')){
 			$('.xqy_modal').hide();
 		}
+	})
+})
+//尺码
+$(function(){
+	$('.cmul li').hover(function() {
+		$(this).addClass('cmli').siblings().removeClass('cmli')
+	},function(){
+		$(this).removeClass('cmli')
+	});
+	$('.g-s-item').hover(function() {
+		$(this).addClass('selected2').siblings().removeClass('selected2')
+	},function(){
+		$(this).removeClass('selected2')
+	});
+	$('.cmul li').click(function(){
+		$(this).addClass('cmli2').siblings().removeClass('cmli2')
+		$(this).addClass('bjcat').siblings().removeClass('bjcat')
+	});
+	$('.g-s-item').click(function(){
+		$(this).find('.bjsan').show()
+		$(this).siblings().find('.bjsan').hide();
 	})
 })

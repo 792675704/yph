@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css">
+	    <link rel="stylesheet" href="css/bottom.css">
+	    <link rel="stylesheet" href="css/left.css">
+		<link rel="stylesheet" href="css/cart.css" />
+	</head>
+	<body>
+			<!-- top -->
+	    <div id="top">
+	        <div class="center top">
+	            <a href="#">
+	                <img src="img/top.jpg" alt="">
+	            </a>
+	        </div>
+	    </div>
+	    <!-- top-nav -->
+	    <div id="top-nav">
+	        <div class="center top-nav">
+	            <div class="news">
+	                <span>公告</span>
+	                <ul>
+	                    <li><a href="#">优品惠（优购物）5周年庆，盛大聚“惠”</a></li>
+	                    <li><a href="#">【注意】自主语音订购说明</a></li>
+	                    <li><a href="#">【紧急通知】关于短信发送异常的公告</a></li>
+	                    <li><a href="#">【公告】防诈骗提醒</a></li>
+	                </ul>
+	            </div>
+	            <ul class="top-left-ul">
+	                <li><a href="#">注册</a></li>
+	                <li><a href="#">登录</a></li>
+	                <li><a href="#">我的订单</a></li>
+	                <li><a href="#">物流查询</a></li>
+	                <li><a href="#">我的关注</a></li>
+	                <li><a href="#">资讯</a></li>
+	                <li><a href="#">品牌馆</a></li>
+	                <li class="wei"><a style="border:0;" href="#"><b><img src="img/phone.png"></b>手机优品惠</a>
+	                    <div class="sao">
+	                        <div class="sao1">
+	                            <img src="img/sao.jpg" alt="">
+	                            <p>扫一扫哦~</p>
+	                        </div>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	        <!-- logo -->
+	    <div class="center logo">
+	        <div class="logom">
+	            <a href="#">
+	                <img src="img/logo.png">
+	                <img src="img/logom.jpg">
+	            </a>
+	        </div>
+	    </div>
+	    <div class="center">我的购物车</div>
+		<!-- cart -->
+		<div class="center">
+			<div class="cart-main">
+				<!--标题-->
+				<div class="cart-main-title">
+					<ul class="clearfix gutit">
+						<li class="td td-checkbox">
+							<input type="checkbox" />
+							<span>全选</span>
+						</li>
+						<li class="td td-gname">
+							<div class="td-inner">商品信息</div>
+						</li>
+						<!-- <li class="td td-gstyle">商品信息</li> -->
+						<li class="td td-gprice">单价(元)</li>
+						<li class="td td-gamount">数量</li>
+						<li class="td td-gmoney">小计（元）</li>
+						<li class="td td-option">操作</li>
+					</ul>
+				</div>
+				<!--商品区-->
+				<div class="cart-main-content">
+
+				</div>
+				<div class="cartbai">
+					<div class="info-item goods-amount" style="float:right;">
+						已选商品<span class="user-goods-amount">0</span>件
+					</div><br>
+					<div class="info-item goods-money"  style="float:right;">
+						合计：不含运费<span class="user-goods-money">0.0</span>
+					</div>	
+				</div>
+				<!--操作区-->
+				<div class="cart-option clearfix">
+					<div class="options clearfix">
+						<div class="options-item select-all">
+							<input type="checkbox" class="select-all-btn">
+							<span>全选</span>
+						</div>
+						<div class="options-item delete">
+							<a class="scbtn scle" href="#">删除</a>
+						</div>
+					</div>
+					<div class="info-item go-pay">结算</div>
+					<!-- <div class="cart-info clearfix">
+						<div class="info-item goods-amount">
+							已选商品<span class="user-goods-amount">0</span>件
+						</div>
+						<div class="info-item goods-money">
+							合计：不含运费<span class="user-goods-money">0.0</span>
+						</div>
+						
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="end" style="height:500px;">   
+    	</div>
+    	<div class="bdleft"></div>
+	    <script src="js/jquery-1.11.3.js"></script>
+	    <script src="js/index.js"></script>
+	    <script src="js/jquery.cookie.js"></script>
+	    <script src="js/search.js"></script>
+	    <script src="js/border-left.js"></script>
+	    <script> 
+	            $('.end').load('bottom.html')
+	    </script>
+		<!-- <script type="text/javascript" src="js/json2.js" ></script> -->
+		<script type="text/javascript" src="js/cart.js" ></script>
+	</body>
+</html>

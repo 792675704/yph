@@ -99,7 +99,7 @@ $(function(){
 				//写到cookie中
 				$.cookie('mls-cart',JSON.stringify( cart ),{expires: 365,path:'/'});
 				console.log(JSON.parse( $.cookie('mls-cart') ) );
-				alert('添加成功');
+				//alert('添加成功');
 
 				/*var dog = {};
 				if(!dog['name']){
