@@ -44,16 +44,17 @@
     		<div class="res_con">
     			<div class="tabnav">
                     <ul>
-                        <li class="navitem active">手机注册</li>
-                        <li class="navitem">电视用户激活</li>
+                        <li class="navitem bj1 active"><span class="tabbj1">手机注册</span></li>
+                        <li class="navitem bj2"><span class="tabbj3">电视用户激活</span></li>
                     </ul>
                 </div>
                 <div class="tabcont">
                     <div class="contitem active">
                         <form action="" method="">
                             <div class="formitem">
+                                <span class="phonrent"></span>
                                 <label>手机号：</label>
-                                <input class="reg1" type="text" name="user" class="">
+                                <input id="username" class="reg1 stip m1" type="text" name="user"  data-date="false">
                                 <div class="re_yin regc1 regs1">
                                     请输入常用手机号，避免忘记
                                 </div>
@@ -66,24 +67,38 @@
                             </div>
                             <div class="formitem">
                                 <label>验证码：</label>
-                                <input class="reg2" type="text">
+                                <input class="reg2 yzmval m2 stip" type="text" data-date="false">
+                                <span class="yzma1">djsn</span>
+                                <span class="yzma2">看不清,<a class="yzmabtn">换一张</a></span>
+                                <div class="re_yin regc1 yzm1">
+                                    请输入验证码
+                                </div>
+                                <div class="re_yin regc2 yzm2">
+                                    请输入验证码
+                                </div>
+                                <div class="re_yin regc2 yzm3">
+                                    验证码不正确，请核对后再输入
+                                </div>
                             </div>
                             <div class="formitem">
+                                <span class="phonrent2"></span>
                                 <label>设置密码：</label>
-                                <input class="reg1" type="password">
+                                <input id="password" class="reg1 m3 stip" type="password" name="pswad" data-date="false">
+                                <!-- maxlength="6" -->
                                 <div class="re_yin regc1 regm1">
                                     6-20位字符，可使用字母，数字或符号的组合
                                 </div>
                                 <div class="re_yin regc2 regm2">
                                     请输入密码
                                 </div>
-                                <div class="re_yin regc2 regm3">
+                                <div class="re_yin regc2 m4 regm3">
                                     密码长度应是6-20位字符，请重新输入
                                 </div>
                             </div>
                             <div class="formitem">
+                                <span class="phonrent3"></span>
                                 <label>确认密码：</label>
-                                <input class="reg1" type="password">
+                                <input class="reg1 stip" type="password" name="qpwd" data-date="false">
                                 <div class="re_yin regc1 regq1">
                                     请再次输入密码
                                 </div>
@@ -101,7 +116,7 @@
                             </div>
                             <div class="formitem">
                                 <label></label>
-                                <input type="checkbox">
+                                <input type="checkbox" data-date="false">
                                 <p class="regp">
                                     &nbsp;我已阅读并同意<a href="#">《优品惠用户服务承诺》</a>
                                 </p>
@@ -117,7 +132,87 @@
                         </form>
                     </div>
                     <div class="contitem">
-                        <img src="img/4.jpg" alt="">
+                        <form action="" method="">
+                            <div class="formitem">
+                                <span class="phonrent"></span>
+                                <label>手机号：</label>
+                                <input id="username" class="reg1 stip m1" type="text" name="user"  data-date="false">
+                                <div class="re_yin regc1 regs1">
+                                    请输入常用手机号，避免忘记
+                                </div>
+                                <div class="re_yin regc2 regs2">
+                                    请输入手机号
+                                </div>
+                                <div class="re_yin regc2 regs3">
+                                    手机格式不正确，请核对后再输入
+                                </div>
+                            </div>
+                            <div class="formitem">
+                                <label>验证码：</label>
+                                <input class="reg2 yzmval m2 stip" type="text" data-date="false">
+                                <span class="yzma1">djsn</span>
+                                <span class="yzma2">看不清,<a class="yzmabtn">换一张</a></span>
+                                <div class="re_yin regc1 yzm1">
+                                    请输入验证码
+                                </div>
+                                <div class="re_yin regc2 yzm2">
+                                    请输入验证码
+                                </div>
+                                <div class="re_yin regc2 yzm3">
+                                    验证码不正确，请核对后再输入
+                                </div>
+                            </div>
+                            <div class="formitem">
+                                <label>短信验证码：</label>
+                                <input class="reg2" type="text">
+                                <input id="reg_btnd" type="button" value="获取短信验证码">
+                            </div>
+                            <div class="formitem">
+                                <span class="phonrent2"></span>
+                                <label>设置密码：</label>
+                                <input id="password" class="reg1 m3 stip" type="password" name="pswad" data-date="false">
+                                <!-- maxlength="6" -->
+                                <div class="re_yin regc1 regm1">
+                                    6-20位字符，可使用字母，数字或符号的组合
+                                </div>
+                                <div class="re_yin regc2 regm2">
+                                    请输入密码
+                                </div>
+                                <div class="re_yin regc2 m4 regm3">
+                                    密码长度应是6-20位字符，请重新输入
+                                </div>
+                            </div>
+                            <div class="formitem">
+                                <span class="phonrent3"></span>
+                                <label>确认密码：</label>
+                                <input class="reg1 stip" type="password" name="qpwd" data-date="false">
+                                <div class="re_yin regc1 regq1">
+                                    请再次输入密码
+                                </div>
+                                <div class="re_yin regc2 regq2">
+                                    请确认密码！
+                                </div>
+                                <div class="re_yin regc2 regq3">
+                                    两次输入的密码不一致，请重新输入
+                                </div>
+                            </div>
+                            
+                            <div class="formitem">
+                                <label></label>
+                                <input type="checkbox" data-date="false">
+                                <p class="regp">
+                                    &nbsp;我已阅读并同意<a href="#">《优品惠用户服务承诺》</a>
+                                </p>
+                            </div>
+                            <div class="formitem">
+                                <label></label>
+                                <button type="button" class="reg-btn">提交</button>
+                            </div>
+                            <div class="formitem">
+                                <label></label>
+                                <p class="regp">如有问题请点击<a href="#">帮助中心</a>，或拨打客服热线：<span>400-707-0707</span></p>
+                            </div>
+                        </form>
                     </div>
                 </div>
     		</div>
@@ -129,7 +224,8 @@
         <script src="js/index.js"></script>
         <script src="js/jquery.cookie.js"></script>
         <script src="js/border-left.js"></script>
-        <script src="js/registered.js"></script>
+        <!-- <script src="js/registered.js"></script> -->
+        <script src="js/mezhuce.js"></script>
         <script> 
                 $('.end').load('bottom.html')
         </script>

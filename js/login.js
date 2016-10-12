@@ -5,20 +5,22 @@ $(function(){
 		//读取cookie
 		var userinfo = $.cookie('userinfo') || '{}';
 		userinfo = JSON.parse( userinfo);
+		console.log(userinfo.username,userinfo.password)
 		if(username != userinfo.username || password != userinfo.password) {
 			alert('用户名或者密码不正确');
 			return;
 		} 
 
-		document.write(username);
+		
 	});
 	$('.inp1').blur(function(){
 			var username = $('input[name="username"]').val();
 			var password = $('input[name="password"]').val();
 			//console.log(username)
+			document.write(focus1);
 			if(!username){
 				$('.cyin1').show();
-				$('form input').addClass('focus1');
+				//$('form input').addClass('focus1');
 			}else if(username != userinfo.username){
 				$('.cyin2').show();
 				$('form input').addClass('focus1');
@@ -30,7 +32,7 @@ $(function(){
 			//console.log(username)
 			if(!username){
 				$('.cyin3').show();
-				$('form input').addClass('focus1');
+				//$('form input').addClass('focus1');
 			}else if(username != userinfo.username){
 				$('.cyin4').show();
 				$('form input').addClass('focus1');
